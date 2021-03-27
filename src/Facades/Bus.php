@@ -18,4 +18,9 @@ class Bus extends Facade
     {
         return 'bus';
     }
+
+    public static function __callStatic($method, $args)
+    {
+        return resolve($method);
+    }
 }

@@ -8,8 +8,6 @@ class BusProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->singleton('bus', function () {
-            return new Bus();
-        });
+        $this->app->singleton('bus');
     }
 }
